@@ -2,7 +2,7 @@ import './style.css';
 import { renderNav, setupNav } from './components/nav.js';
 import { renderHome, setupHome } from './components/home.js';
 import { renderGuide, setupGuide } from './components/guide.js';
-import { renderScan, setupScan } from './components/scan.js';
+import { renderDIY, setupDIY } from './components/diy.js';
 import { renderGame, setupGame } from './components/game.js';
 import { renderVoice, setupVoice } from './components/voice.js';
 
@@ -18,8 +18,8 @@ function render(page) {
     case 'guide':
       content = renderGuide();
       break;
-    case 'scan':
-      content = renderScan();
+    case 'diy':
+      content = renderDIY();
       break;
     case 'game':
       content = renderGame();
@@ -43,7 +43,7 @@ function render(page) {
 
   if (page === 'home' || !page) setupHome();
   if (page === 'guide') setupGuide();
-  if (page === 'scan') setupScan();
+  if (page === 'diy') setupDIY();
   if (page === 'game') setupGame();
   if (page === 'voice') setupVoice();
 }

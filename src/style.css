@@ -525,73 +525,39 @@ input:checked+.slider:before {
   }
 }
 
-/* Scan Styles */
-.camera-container {
-  position: relative;
-  width: 100%;
-  max-width: 400px;
-  margin: 0 auto;
-  border-radius: var(--radius);
-  overflow: hidden;
-  background: #000;
-  min-height: 300px;
+
+/* DIY Styles */
+.diy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-md);
+  margin-top: var(--space-md);
 }
 
-#webcam {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.diy-card {
+  text-align: left;
 }
 
-.loading-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.diy-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: rgba(0, 0, 0, 0.7);
-  color: var(--white);
-  z-index: 10;
+  font-size: 2rem;
+  margin-bottom: var(--space-md);
 }
 
-.camera-trigger {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 20;
-}
-
-.scan-result {
-  margin-top: var(--space-lg);
-  text-align: center;
-  padding: var(--space-md);
-  background: var(--white);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-}
-
-.confidence-meter {
-  width: 100%;
-  height: 10px;
-  background: #eee;
-  border-radius: 5px;
-  margin: var(--space-sm) 0;
-  overflow: hidden;
-}
-
-.confidence-fill {
-  height: 100%;
-  background: var(--primary);
-  width: 0%;
-  transition: width 0.5s ease;
+.diy-steps {
+  margin-left: var(--space-lg);
+  margin-top: var(--space-sm);
+  color: var(--text-light);
+  line-height: 1.8;
 }
 
 /* Voice Styles */
+
 .voice-container {
   display: flex;
   flex-direction: column;

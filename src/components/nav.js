@@ -9,10 +9,11 @@ export function renderNav() {
         <i class="ph ph-book-open"></i>
         <span>Guide</span>
       </a>
-      <a href="#scan" data-page="scan" class="nav-item">
-        <i class="ph ph-camera"></i>
-        <span>Scan</span>
+      <a href="#diy" data-page="diy" class="nav-item">
+        <i class="ph ph-hammer"></i>
+        <span>DIY</span>
       </a>
+
       <a href="#game" data-page="game" class="nav-item">
         <i class="ph ph-game-controller"></i>
         <span>Sort-It</span>
