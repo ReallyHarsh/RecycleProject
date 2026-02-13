@@ -35,7 +35,7 @@ function render(page) {
     <main class="container">
       ${content}
     </main>
-    ${renderNav()}
+    ${renderNav(page)}
   `;
 
   // Re-attach listeners
